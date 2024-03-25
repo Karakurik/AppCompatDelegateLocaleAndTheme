@@ -1,5 +1,6 @@
 package com.github.karakurik.localeAndTheme
 
+import android.app.ActivityOptions
 import android.content.Intent
 import android.os.Bundle
 import androidx.activity.compose.setContent
@@ -97,14 +98,14 @@ class MainActivity : AppCompatActivity() {
                                                     Intent(
                                                         this,
                                                         MainActivity::class.java
-                                                    )
+                                                    ),
+                                                    ActivityOptions.makeCustomAnimation(
+                                                        this@MainActivity,
+                                                        android.R.anim.fade_in,
+                                                        android.R.anim.fade_out,
+                                                    ).toBundle()
                                                 )
                                                 finish()
-
-                                                overridePendingTransition(
-                                                    android.R.anim.fade_in,
-                                                    android.R.anim.fade_out,
-                                                )
                                             }
                                         },
                                         content = { Text(selectionLocale) }
@@ -155,14 +156,14 @@ class MainActivity : AppCompatActivity() {
                                                     Intent(
                                                         this,
                                                         MainActivity::class.java
-                                                    )
+                                                    ),
+                                                    ActivityOptions.makeCustomAnimation(
+                                                        this@MainActivity,
+                                                        android.R.anim.fade_in,
+                                                        android.R.anim.fade_out,
+                                                    ).toBundle()
                                                 )
                                                 finish()
-
-                                                overridePendingTransition(
-                                                    android.R.anim.fade_in,
-                                                    android.R.anim.fade_out,
-                                                )
                                             }
                                         },
                                         content = { Text(themeModes[selectionTheme].orEmpty()) }
