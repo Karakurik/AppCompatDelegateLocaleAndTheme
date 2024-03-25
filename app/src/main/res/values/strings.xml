@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">AppCompatDelegateLocaleAndTheme</string>
+    <string name="greeting">the world is beautiful</string>
+    <string name="en" translatable="false">English</string>
+    <string name="hi" translatable="false">हिन्दी</string>
+    <string name="fr" translatable="false">Français</string>
+    <string name="ja" translatable="false">日本語</string>
+    <string name="language">English</string>
+    <string name="system" translatable="false">System</string>
+    <string name="night" translatable="false">Night</string>
+    <string name="light" translatable="false">Light</string>
+</resources>

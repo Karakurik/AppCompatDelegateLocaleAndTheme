@@ -1,0 +1,32 @@
+[versions]
+appVersionCode = "1"
+appVersionName = "1.0.0"
+appMinSdk = "26"
+appCompileSdk = "34"
+appTargetSdk = "34"
+jvm = "21"
+
+agp = "8.3.1"
+appcompat = "1.6.1"
+kotlin = "1.9.23"
+compose-compiler = "1.5.11"
+coreKtx = "1.12.0"
+lifecycleRuntimeKtx = "2.7.0"
+activityCompose = "1.8.2"
+composeBom = "2024.03.00"
+
+[libraries]
+androidx-appcompat = { module = "androidx.appcompat:appcompat", version.ref = "appcompat" }
+androidx-appcompat-resources = { module = "androidx.appcompat:appcompat-resources", version.ref = "appcompat" }
+androidx-core-ktx = { group = "androidx.core", name = "core-ktx", version.ref = "coreKtx" }
+androidx-lifecycle-runtime-ktx = { group = "androidx.lifecycle", name = "lifecycle-runtime-ktx", version.ref = "lifecycleRuntimeKtx" }
+androidx-activity-compose = { group = "androidx.activity", name = "activity-compose", version.ref = "activityCompose" }
+androidx-compose-bom = { group = "androidx.compose", name = "compose-bom", version.ref = "composeBom" }
+androidx-ui = { group = "androidx.compose.ui", name = "ui" }
+androidx-ui-graphics = { group = "androidx.compose.ui", name = "ui-graphics" }
+androidx-ui-tooling-preview = { group = "androidx.compose.ui", name = "ui-tooling-preview" }
+androidx-material = { group = "androidx.compose.material", name = "material" }
+
+[plugins]
+android-application = { id = "com.android.application", version.ref = "agp" }
+jetbrains-kotlin-android = { id = "org.jetbrains.kotlin.android", version.ref = "kotlin" }
